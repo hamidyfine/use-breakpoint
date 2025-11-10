@@ -1,6 +1,7 @@
 {
   "name": "@hamidyfine/use-breakpoint",
   "version": "0.1.0",
+  "private": false,
   "description": "Lightweight React hook for breakpoint-based responsive logic supports SSR and CSS-in-JS.",
   "keywords": [
     "react",
