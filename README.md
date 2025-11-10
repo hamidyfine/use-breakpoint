@@ -195,20 +195,6 @@ function StyledComponent() {
 }
 ```
 
-## Development
-
-```bash
-npm install
-npm run typecheck
-npm run build
-```
-
-## Publishing
-
-1. Update `package.json` version
-2. Run `npm run build`
-3. `npm publish`
-
 ## License
 
 MIT © Hamid
