@@ -1,0 +1,57 @@
+{
+  "name": "@hamidyfine/use-breakpoint",
+  "version": "0.1.0",
+  "description": "Lightweight React hook for breakpoint-based responsive logic supports SSR and CSS-in-JS.",
+  "keywords": [
+    "react",
+    "react-hook",
+    "breakpoint",
+    "responsive",
+    "nextjs"
+  ],
+  "homepage": "https://github.com/hamidyfine/use-breakpoint",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hamidyfine/use-breakpoint.git"
+  },
+  "bugs": {
+    "url": "https://github.com/hamidyfine/use-breakpoint/issues"
+  },
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "sideEffects": false,
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "clean": "rimraf dist",
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "prepare": "npm run build",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=17.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.2",
+    "@typescript-eslint/eslint-plugin": "^8.46.3",
+    "@typescript-eslint/parser": "^8.46.3",
+    "eslint": "^9.39.1",
+    "eslint-config-reactify": "^1.1.6",
+    "rimraf": "^6.1.0",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3"
+  }
+}
+
