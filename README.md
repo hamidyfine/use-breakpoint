@@ -12,11 +12,11 @@ Responsive breakpoint hook for React and Next.js applications.
 ## Installation
 
 ```bash
-npm install use-breakpoint
+npm install @hamidyfine/use-breakpoint
 # or
-yarn add use-breakpoint
+yarn add @hamidyfine/use-breakpoint
 # or
-pnpm add use-breakpoint
+pnpm add @hamidyfine/use-breakpoint
 ```
 
 ## Quick Start
@@ -24,7 +24,7 @@ pnpm add use-breakpoint
 ### 1. Wrap your app with `BreakpointProvider`
 
 ```tsx
-import { BreakpointProvider } from "use-breakpoint";
+import { BreakpointProvider } from "@hamidyfine/use-breakpoint";
 
 const breakpoints = {
   xs: 560,
@@ -47,7 +47,7 @@ function App() {
 ### 2. Use the hook in your components
 
 ```tsx
-import { useBreakpoint } from "use-breakpoint";
+import { useBreakpoint } from "@hamidyfine/use-breakpoint";
 
 function Example() {
   const { current, greaterThan, smallerThan, equal, between } = useBreakpoint();
@@ -149,7 +149,7 @@ The `current` breakpoint is determined by finding the largest breakpoint where t
 
 ```tsx
 // app/layout.tsx or pages/_app.tsx
-import { BreakpointProvider } from "use-breakpoint";
+import { BreakpointProvider } from "@hamidyfine/use-breakpoint";
 
 export default function RootLayout({ children }) {
   return (
