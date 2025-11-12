@@ -5,8 +5,12 @@ export default defineConfig({
     dts: true,
     entry: ['src/index.ts'],
     format: ['cjs', 'esm'],
-    legacyOutput: true,
     minify: false,
+    outExtension({ format }) {
+        return {
+            js: format === 'cjs' ? '.cjs' : '.mjs',
+        };
+    },
     sourcemap: true,
     target: 'es2018',
     treeshake: true,
